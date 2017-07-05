@@ -1,0 +1,36 @@
+//---- contact form ------//
+.contact-form{
+  margin-top: $gap-large;
+  font-family: $body-font !important;
+  margin-left: $gap-small *3;
+  margin-right: $gap-small *3;
+
+  @include breakpoint($medium){
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .button {
+    margin-bottom:  $gap-large;
+    font-size: 15pt;
+    font-family: $body-font;
+  }
+
+  textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $highlight-color1;
+    font-size: $font-size-h5;
+    margin-bottom:  $gap-large;
+    font-family: $body-font;
+  }
+
+  input.input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $highlight-color1;
+    font-size: $font-size-h5;
+    margin-bottom:  $gap-large;
+    font-family: $body-font;
+  }
+}

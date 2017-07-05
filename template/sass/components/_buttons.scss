@@ -1,0 +1,22 @@
+//----- Buttons -------
+.button{
+  background:    $highlight-color1;
+  border: 1px solid $highlight-color1;
+  border-radius: 7px;
+  color:         $body-color;
+  display:       inline-block;
+  padding:       5px 60px;
+  text-align:    center;
+  text-shadow:   none;
+
+  &:hover, &:active, &:focus{
+    background-color: $body-color;
+    color: $highlight-color1;
+    border: 1px solid $highlight-color1;
+  }
+}
+
+.button.index{
+  margin-left: $gap-small;
+  margin-top: $gap-small;
+}

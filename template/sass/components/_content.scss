@@ -1,0 +1,31 @@
+.content{
+  color: $main-color;
+  display: block;
+  margin-left: $column-spacing;
+}
+
+.team-social{
+  float: right;
+  margin-left: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+
+  i{
+    color: $highlight-color1;
+  }
+
+  i:hover{
+    color: $highlight-color3;
+  }
+}
+
+.leadtext{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+// google maps
+#googlemaps{
+  margin-top: -25px;
+}
