@@ -1,0 +1,52 @@
+.fullscreen{
+  div{
+    margin-top: $gap-large;
+  }
+
+  .pic{
+    @include breakpoint($large){
+      margin-bottom: $gap-large;
+    }
+    padding-bottom: 0;
+  }
+
+  p{
+    padding-bottom: $gap-small*2;
+  }
+}
+
+
+.fsc{
+  background-color: $highlight-color3;
+  color: $body-color;
+  padding-top: $gap-large;
+  padding-bottom: $gap-large;
+  margin-bottom: $gap-large;
+
+  a{
+    padding: $gap-small*2 $gap-large*3;
+    margin-top: 22px;
+    margin-left: 10%;
+    border: 1px solid $body-color;
+    background: transparent;
+    color: $body-color;
+    text-transform: uppercase;
+
+    @include breakpoint($medium){
+      margin-left: 25%;
+    }
+  }
+
+  a:hover{
+    background: $body-color;
+    color:$highlight-color3;
+    border: 1px solid $body-color;
+  }
+}
+
+
+
+
+
+
+

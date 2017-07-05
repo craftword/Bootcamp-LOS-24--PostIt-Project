@@ -1,0 +1,93 @@
+.footer{
+  background-color: $highlight-color3;
+  font-size: $font-size-h6;
+  width: 100%;
+  padding: 0 $column-spacing/2 0 $column-spacing;
+  z-index: 100;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: table;
+
+  .last{
+    text-align: right;
+  }
+}
+
+.bottom-bar{
+  background-color: $main-color;
+}
+
+.footer-left{
+  padding: $gap-small 0 $gap-small $gap-small*2;
+}
+
+.footer-right{
+  right: 0;
+  float: right;
+  margin-top: -25px;
+  padding: $gap-small $gap-small $gap-small 0;
+
+  a{
+    margin-left: $gap-small !important;
+    float: left;
+  }
+}
+
+footer a{
+  color: $body-color;
+  text-decoration: none;
+  float: left;
+}
+
+footer a:hover{
+  color: $highlight-color1;
+}
+
+.footer-clearer{
+  height: 50px;
+}
+.footer .c3{
+  @extend %fixed-margin;
+  @include span(12 of 12);
+  padding-bottom: 10px;
+  text-align: center;
+
+  p a{
+    text-align: center !important;
+    float: none;
+  }
+
+  border-bottom: 1px solid $main-color;
+  margin-right: 0 !important;
+
+  &.last{
+    @include span(12 of 12 last);
+  }
+
+  @include breakpoint($medium){
+    border-bottom: none;
+
+    &.right{
+      text-align: right !important;
+    }
+    text-align: left;
+
+    @include span(6 of 12);
+    &.last{
+      @include span(6 of 12 last);
+    }
+  }
+  @include breakpoint($large){
+    border-bottom: none;
+
+    &.right{
+      text-align: right !important;
+    }
+    text-align: left;
+
+    @include span(3 of 12);
+    &.last{
+      @include span(3 of 12 last);
+    }
+  }
+}

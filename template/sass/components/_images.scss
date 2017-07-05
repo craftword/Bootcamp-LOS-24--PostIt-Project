@@ -1,0 +1,62 @@
+
+//------ PICTURES ----------
+
+.pic{
+  max-width: 100%;
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+  display: block;
+  padding-bottom: 1.5em;
+}
+
+
+.caption{
+  background-color: rgba($body-color, 0.7);
+  z-index:5;
+  position: absolute;
+  margin: 0 auto;
+  top: -2px;
+  left: 10%;
+  height: 80%;
+  width: 80%;
+  text-align: center;
+  color: $main-color;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+
+}
+
+.hover-effect:hover{
+  .caption{
+    visibility: visible;
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+}
+
+.hover-effect:hover:after{
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+  opacity: 0.9;
+}
+
+.caption h6{
+  padding-top: 65px;
+  text-align: center;
+}
+
+.caption h4{
+  padding-top: 10px;
+  text-align: center;
+}
+
+.hover-effect{
+  position: relative;
+}

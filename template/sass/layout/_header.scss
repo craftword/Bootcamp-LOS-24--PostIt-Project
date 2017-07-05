@@ -1,0 +1,42 @@
+/* ------- Header --------*/
+
+#header{
+  position: fixed;
+  z-index: 999;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 101%;
+  padding-left: $gap-small*2;
+
+  .container{
+    position: relative;
+  }
+}
+
+#logo{
+  position: relative;
+  float: left;
+  font-family: $body-font;
+  font-size: 36px;
+  line-height: 100%;
+  margin-right: 40px;
+  padding: $gap-small 0px $gap-small $gap-small*2;
+}
+
+.darklogo{
+  left: $gap-small * 2;
+  position: absolute;
+  display: none;
+  top: 4px;
+}
+
+.visible{
+  display: inline-block;
+}
+
+#logo img{
+  height: $header-height - $gap-large;
+  margin-top: 6px;
+}
+
+
