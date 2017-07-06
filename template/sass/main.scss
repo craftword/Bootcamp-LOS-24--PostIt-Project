@@ -3,14 +3,13 @@
  */
 
 
-/* ABSTRACTS */
-@import "abstracts/variables";
-@import "abstracts/mixins";
+/* core scss */
+ @import "core/config";
+ @import "core/dependencies";
+ @import "core/functions";
+ @import "core/mixins";
 
-/* BASE */
-@import "base/typography";
-@import "base/base";
-
-
-/* LAYOUT*/
-@import "layout/grid";
+ /* grid scss */
+ @import "grid";
+ @import "vars";
+ @import "include_components";

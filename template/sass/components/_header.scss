@@ -35,8 +35,15 @@
 }
 
 #logo img{
-  height: $header-height - $gap-large;
+  height: 50px;
   margin-top: 6px;
+}
+
+#fontPageSignIn {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+
 }
 
 
