@@ -1,72 +1,8 @@
-//------- Theme Colors ----------//
-
-$main-color: rgb(70,73,76);
-$body-color: rgb(255,255,255);
-//$highlight-color1: rgb(25,133,161);
-$highlight-color1: rgb(170,187,51);
-$hightlight-color1-dark: rgb(3, 84, 107);
-$highlight-color2: rgb(0,0,0);
-$highlight-color3: rgb(197,195,198);
-$highlight-color4: rgb(220,220,220);
-
-// ----- Transparent Colors -----//
-//$transparent1: rgba(197,195,198, .5);
-//$transparent1-fallback: rgb(197,195,198);
-
-
-//-------- Breakpoints ----------//
-$medium: 550px;
-$large: 750px;
-
-//--------Font Size -------------//
-$font-size-base:                12pt;
-$font-size-h1:                  40pt;
-$font-size-h2:                  35pt;
-$font-size-h3:                  28pt;
-$font-size-h4:                  20pt;
-$font-size-h5:                  18pt;
-$font-size-h6:                  $font-size-base;
-
-//------- Typography Variables -------//
-$line-height-base:  1.5;
-$line-height-content: 1.8;
-
-$body-font: "Lato", sans-serif;
-$heading-font: "Raleway", sans-serif;
-$serif-font:'Tinos', serif;
-
-
-//------- Header -------------------//
-$header-height: 50px;
-$sticky-header-height: 60px;
-
-//------- Primary Menu ------------//
-$primary-menu-font-size: 30px;
-$primary-menu-font-color: $highlight-color2;
-$primary-menu-font-weight: 700;
-$primary-menu-text-transform: uppercase;
-
-$primary-menu-sub-width: 220px;
-$primary-menu-sub-font: $body-font;
-$primary-menu-sub-font-size: 10pt;
-$primary-menu-submenu-font-weight: 600;
-$primary-menu-font-spacing: 1px;
-
-//------- Responsive Menu ---------------//
-$section-padding: 60px;
-$section-margin: 60px;
-$section-background: $highlight-color3;
-
-$link-color: rgb(255,255,255);
-$link-hover: $highlight-color1;
-$link-vertical-padding:15px;
-$link-horizontal-padding:20px;
-
-
-//-------- Grid System ---------//
-$column-spacing: 2%;
-
-//------ Margins & Paddings ------//
-
-$gap-large: 20px;
-$gap-small: 5px;
+// grid variables
+$grid-columns: 12;
+$grid-max-width: 65em;
+ 
+ 
+// breakpoints
+$breakpoint-small: "only screen and (min-width: 20em)";
+$breakpoint-medium: "only screen and (min-width: 30em)";

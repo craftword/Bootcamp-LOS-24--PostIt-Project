@@ -1,235 +1,39 @@
-//---- Susy ---------//
-$susy: (
-        columns: 12,
-        container: 1200px,
-        gutters: 1/4,
-        global-box-sizing: border-box
-);
-
-@include border-box-sizing;
-
-.wrap{
-  @include container();
-}
-
-%fixed-margin{
-  margin-bottom: $gap-small*2;
-}
-
-.c1{
-  @extend %fixed-margin;
-  @include span(12 of 12);
-  @include breakpoint($medium){
-    @include span(6 of 12);
-
-    &.last{
-      @include span(6 of 12 last);
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    @include border-box;
     }
-  }
-  @include breakpoint($large){
-    @include span(1 of 12);
-
-    &.last{
-      @include span(1 of 12 last);
+     
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto !important; 
+    }   
+ 
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
     }
-  }
-}
-
-.c2{
-  @extend %fixed-margin;
-  @include span(12 of 12);
-  @include breakpoint($medium){
-    @include span(6 of 12);
-
-    &.last{
-      @include span(6 of 12 last);
+ 
+.wrapper, .row {
+    @extend %clearfix;
     }
-  }
-  @include breakpoint($large){
-    @include span(2 of 12);
-
-    &.last{
-      @include span(2 of 12 last);
+      
+[class*='column-'] {
+    float: left;
+    padding: 1em;
+    width: 100%;
+    min-height: 1px; 
+    }   
+ 
+@media #{$breakpoint-medium} {
+    .wrapper {      
+        width: 95%;
+        max-width: $grid-max-width;     
+        }
+    @for $i from 1 through $grid-columns {      
+        .column-#{$i} {         
+            width: 100% / $grid-columns * $i;   
+            }           
+        }   
     }
-  }
-}
-
-.c3 {
-  @extend %fixed-margin;
-  @include span(12 of 12);
-  @include breakpoint($medium){
-    @include span(6 of 12);
-
-    &.last{
-      @include span(6 of 12 last);
-    }
-  }
-  @include breakpoint($large){
-    @include span(3 of 12);
-
-    &.last{
-      @include span(3 of 12 last);
-    }
-  }
-}
-
-.c4{
-  @extend %fixed-margin;
-  @include span(12 of 12);
-  @include breakpoint($medium){
-    @include span(6 of 12);
-
-    &.last{
-      @include span(6 of 12 last);
-    }
-  }
-  @include breakpoint($large){
-    @include span(4 of 12);
-
-    &.last{
-      @include span(4 of 12 last);
-    }
-  }
-}
-
-.c5{
-  @extend %fixed-margin;
-  @include span(12 of 12);
-  @include breakpoint($medium){
-    @include span(6 of 12);
-
-    &.last{
-      @include span(6 of 12 last);
-    }
-  }
-  @include breakpoint($large){
-    @include span(5 of 12);
-
-    &.last{
-      @include span(5 of 12 last);
-    }
-  }
-}
-
-.c6{
-  @extend %fixed-margin;
-  @include span(12 of 12);
-  @include breakpoint($medium){
-    @include span(6 of 12);
-
-    &.last{
-      @include span(6 of 12 last);
-    }
-  }
-  @include breakpoint($large){
-    @include span(6 of 12);
-
-    &.last{
-      @include span(6 of 12 last);
-    }
-  }
-}
-
-.c7{
-  @extend %fixed-margin;
-  @include span(12 of 12);
-  @include breakpoint($medium){
-    @include span(6 of 12);
-
-    &.last{
-      @include span(6 of 12 last);
-    }
-  }
-  @include breakpoint($large){
-    @include span(7 of 12);
-
-    &.last{
-      @include span(7 of 12 last);
-    }
-  }
-}
-
-.c8{
-  @extend %fixed-margin;
-  @include span(12 of 12);
-  @include breakpoint($medium){
-    @include span(6 of 12);
-
-    &.last{
-      @include span(6 of 12 last);
-    }
-  }
-  @include breakpoint($large){
-    @include span(8 of 12);
-
-    &.last{
-      @include span(8 of 12 last);
-    }
-  }
-}
-
-.c9{
-  @extend %fixed-margin;
-  @include span(12 of 12);
-  @include breakpoint($medium){
-    @include span(6 of 12);
-
-    &.last{
-      @include span(6 of 12 last);
-    }
-  }
-  @include breakpoint($large){
-    @include span(9 of 12);
-
-    &.last{
-      @include span(9 of 12 last);
-    }
-  }
-}
-
-.c10{
-  @extend %fixed-margin;
-  @include span(12 of 12);
-  @include breakpoint($medium){
-    @include span(6 of 12);
-
-    &.last{
-      @include span(6 of 12 last);
-    }
-  }
-  @include breakpoint($large){
-    @include span(10 of 12);
-
-    &.last{
-      @include span(10 of 12 last);
-    }
-  }
-}
-
-.c11{
-  @extend %fixed-margin;
-  @include span(12 of 12);
-  @include breakpoint($medium){
-    @include span(6 of 12);
-
-    &.last{
-      @include span(6 of 12 last);
-    }
-  }
-  @include breakpoint($large){
-    @include span(11 of 12);
-
-    &.last{
-      @include span(11 of 12 last);
-    }
-  }
-}
-
-.c12{
-  @extend %fixed-margin;
-  @include span(12 of 12);
-
-  &.last{
-    @include span(12 of 12 last);
-  }
-}
