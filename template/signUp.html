@@ -5,6 +5,8 @@
     <title>HTML Template</title>
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Tinos:700" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="icon" type="image/png" href="img/logo_dark.png"/>
@@ -17,25 +19,38 @@
          <div class="clearfix"> </div>
         <div class="container">
             <div id="fontPageSignIn">             
-                 <h2>REGISTRATION</h2>
-                 
-              <form>
-                <fieldset>
-                    <label>USERNAME
-                    <input type="text" placeholder="Enter Your Username">
-                    </label>
-                    <label>PASSWORD
-                    <input type="text" placeholder="Enter Your Password">
-                    </label>
-                    <label>FULLNAME
-                    <input type="text" placeholder="Enter Your Fullname">
-                    </label>
-                    <label>PHONE
-                    <input type="text" placeholder="Enter Your Phone">
-                    </label>
-                     <a href="#" class="button">SignUp </a> 
-                </fieldset>
-              </form>
+                 <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+        
+        <h3 align="center"> SIGN UP WITH EMAIL</h3>
+        <hr />
+          <form>
+            <div class="input-group form-group">
+              <span class="input-group-addon"><i class='fa fa-envelope'></i></span>
+              <input type="text" class="form-control" placeholder="Username" id="email">
+            </div>
+            <div class="input-group form-group">
+              <span class="input-group-addon"><i class='fa fa-key'></i></span>
+              <input type="Password" class="form-control" placeholder="Password" id="password">
+            </div>
+            <div class="input-group form-group">
+              <span class="input-group-addon"><i class='fa fa-user'></i></span>
+              <input type="text" class="form-control" placeholder="Fullname" id="fullname">
+            </div>
+            <div class="input-group form-group">
+              <span class="input-group-addon"><i class='fa fa-phone'></i></span>
+              <input type="text" class="form-control" placeholder="Phone" id="phone">
+            </div>
+            
+
+
+            <div class="form-group">
+              <button type="submit" class="btn  btn-block  btn-submit pull-right" onclick="createUsersProfile()">Submit</button>
+            </div>
+          </div>
+         </form>
+          
+        </div>
+        <!-- col -->
             </div>
         </div>
    

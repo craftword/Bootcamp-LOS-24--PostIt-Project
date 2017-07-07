@@ -5,6 +5,8 @@
     <title>HTML Template</title>
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Tinos:700" rel="stylesheet">
+     <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
     <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="icon" type="image/png" href="img/logo_dark.png"/>
@@ -20,27 +22,34 @@
                  <h1>PostIT WEB APPLICATION </h1>
                  <h3> Community of Software and Web developer </h3>
             
-              <form>
-                <fieldset>
-                    
-                    <legend>Sign In</legend>
-                    <label>EMAIL
-                    <input type="text" placeholder="Enter Your Email">
-                    </label>
-                    <label>PASSWORD
-                    <input type="text" placeholder="Enter Your Password">
-                    </label>
-                    <a href="#" class="button">SignIn </a> <a href="#" class="button">SignUp </a> 
-                </fieldset>
-              </form>
-
+            <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+        
+        <h4 align="center"> LOGIN WITH YOUR EMAIL</h4>
+        <hr />
+          <form>
+            <div class="input-group form-group">
+              <span class="input-group-addon"><i class='fa fa-envelope'></i></span>
+              <input type="text" class="form-control" placeholder="Username" name="email">
+            </div>
+            <div class="input-group form-group">
+              <span class="input-group-addon"><i class='fa fa-key'></i></span>
+              <input type="Password" class="form-control" placeholder="Password" name="password">
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn  btn-block  btn-submit pull-right">Submit</button>
+            </div>
+          </div>
+          </form>
+          
+        </div>
             </div>
         </div>
    
     </header>
      <img src="img/background.jpg" />
- 
+     
 
-
+ <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
