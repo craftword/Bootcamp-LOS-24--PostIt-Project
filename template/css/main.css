@@ -384,6 +384,7 @@ html {
 
 body {
   background: #ccc;
+  background-image: url("../img/background.jpg");
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -805,35 +806,16 @@ img.scale-with-grid {
   #header .container {
     position: relative; }
 
-#logo {
-  position: relative;
-  float: left;
-  font-family: "Lato", sans-serif;
-  font-size: 36px;
-  line-height: 100%;
-  margin-right: 40px;
-  padding: 5px 0px 5px 10px; }
-
-.darklogo {
-  left: 10px;
-  position: absolute;
-  display: none;
-  top: 4px; }
-
-.visible {
-  display: inline-block; }
-
-#logo img {
-  height: 80px;
+.logo {
+  width: 250px;
+  height: 75px;
   margin-top: 6px; }
 
-#fontPageSignIn {
-  margin-top: -50px;
-  position: absolute;
-  top: 150px;
-  left: 150px; }
+.login {
+  border: #000 solid 1px;
+  border-radius: 1px;
+  padding: 20px; }
 
-#fontPageSignIn h4 {
+.frontText {
   font-family: "Monotype Corsiva";
-  color: white;
- }
+  font-size: 30px; }

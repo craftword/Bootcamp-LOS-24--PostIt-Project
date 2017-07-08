@@ -13,55 +13,25 @@
   }
 }
 
-#logo{
-  position: relative;
-  float: left;
-  font-family: $body-font;
-  font-size: 36px;
-  line-height: 100%;
-  margin-right: 40px;
-  padding: $gap-small 0px $gap-small $gap-small*2;
-}
 
-.darklogo{
-  left: $gap-small * 2;
-  position: absolute;
-  display: none;
-  top: 4px;
-}
-
-.visible{
-  display: inline-block;
-}
-
-#logo img{
-  height: 80px;
+.logo {
+  width: 250px;
+  height: 75px;
   margin-top: 6px;
 }
 
-#fontPageSignIn {
-    margin-top: -50px;
-    position: absolute;
-    top: 150px;
-    left: 150px;
-
-}
-
-#fontPageSignIn h3 h4 {
-    font-family: "Monotype Corsiva";
-    color: $body-color;
-    text-align: center;
-
-}
-
-#fontPageSignIn form {
-    margin-top: 25px;
-    font-size: 25px;
-
+.login {
+  border: #000 solid 1px;
+  border-radius:1px;
+  padding:20px; 
 }
 
 
-
+.frontText {
+  font-family: "Monotype Corsiva";
+  font-size: 30px;
+  
+}
 
 
 
