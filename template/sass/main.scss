@@ -3,13 +3,8 @@
  */
 
 
-/* core scss */
- @import "core/config";
- @import "core/dependencies";
- @import "core/functions";
- @import "core/mixins";
 
  /* grid scss */
- @import "grid";
- @import "vars";
- @import "include_components";
+ @import "components/theme";
+ @import "components/login";
+ @import "components/layout";
