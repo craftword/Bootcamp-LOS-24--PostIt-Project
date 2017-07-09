@@ -1,9 +1,10 @@
 {
-  "name": "Andela PostIT App",
+  "name": "AndelaPostITApp",
   "version": "1.0.0",
   "description": "PostIt Bootcamp Project, the app is for community of people",
   "main": "app.js",
   "scripts": {
+    "start:dev": "nodemon ./bin/www",
     "test": "npm test"
   },
   "repository": {
@@ -22,11 +23,15 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-compass": "^2.1.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "nodemon": "^1.11.0"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
-    "morgan": "^1.8.2"
+    "morgan": "^1.8.2",
+    "pg": "^6.4.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.2.1"
   }
 }
