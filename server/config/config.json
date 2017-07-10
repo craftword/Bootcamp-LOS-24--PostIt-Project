@@ -1,6 +1,11 @@
 {
   "development": {
-    "use_env_variable": "postgres://anqcmjix:UgWh_gdlcXgJUjCXBn-bIjC_XvNqfj-i@tantor.db.elephantsql.com:5432/anqcmjix"
+    "username": "anqcmjix",
+    "password": "UgWh_gdlcXgJUjCXBn-bIjC_XvNqfj-i",
+    "database": "anqcmjix",
+    "use_env_variable": "postgres://anqcmjix:UgWh_gdlcXgJUjCXBn-bIjC_XvNqfj-i@tantor.db.elephantsql.com:5432/anqcmjix",
+    "host":"tantor.db.elephantsql.com",
+    "dialect": "postgres"
   },
   "test": {
     "username": "root",
