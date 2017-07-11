@@ -7,7 +7,7 @@ const config = require(`${__dirname}/../config/config.json`)[env];
 const db = {};
 
 // This check the Environment in use whether local and online
-console.log(config.use_env_variable, '==================>');
+
 let sequelize;
 if (config.use_env_variable) {
   sequelize = new Sequelize(config.use_env_variable);
