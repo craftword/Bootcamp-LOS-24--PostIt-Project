@@ -18,7 +18,7 @@ module.exports = {
                 bcrypt.compare(req.body.password, hash, (err, doesMatch)=>{
                     if (doesMatch){
                     //log him in
-                        res.status(202).json({pass: "Authentication successful..." });
+                        res.status(202).json({userId:result.id, pass: "Authentication successful..." });
                     }else{
                     //go away
                         res.status(403).json({ error: "Inavlid username or password" });
