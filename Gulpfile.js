@@ -7,11 +7,12 @@ gulp.task('styles', ()=> {
         .pipe(gulp.dest('./template/css/'));
 });
 
+
 //Watch task
 gulp.task('default',()=> {
     gulp.watch('template/sass/**/*.scss',['styles']);
 });
 
-gulp.task('travis', ['build', 'test/testRoute.js'], ()=> {
+gulp.task('travis', ['test/testRoute.js'], ()=> {
     process.exit(0);
 });
