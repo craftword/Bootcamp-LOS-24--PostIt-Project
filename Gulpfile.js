@@ -13,6 +13,6 @@ gulp.task('default',()=> {
     gulp.watch('template/sass/**/*.scss',['styles']);
 });
 
-gulp.task('travis', ['test/testRoute.js'], ()=> {
+gulp.task('travis', 'test/testRoute.js', ()=> {
     process.exit(0);
 });
