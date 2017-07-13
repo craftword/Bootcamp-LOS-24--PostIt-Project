@@ -22,6 +22,23 @@ describe('Test for Posting messages for group 3', ()=> {
 
 });
 
+// Test for Api Create Users
+describe('Test for creating unique user', ()=> {
+    it('respond with json', (done)=> {
+        const prob = {username:""};
+        server
+            .post('/api/user/signup')
+            .send(prob)
+            .end((err,res)=> {
+                const data = JSON.parse(res.text);
+                expect(err).to.be.null;
+                expect(data.message).to.equal(prob.message);
+                done();
+            });
+    });
+
+});
+
 
 //Test for signIn user as a token
 describe('Test for token when sign in', ()=> {
