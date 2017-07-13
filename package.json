@@ -6,7 +6,8 @@
   "main": "app.js",
   "scripts": {
     "start:dev": "nodemon ./bin/www",
-    "test": "mocha test/testRoute.js --10000"
+    "test": "mocha test/testRoute.js --10000",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
