@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Andela PostIT App</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="icon" type="image/png" href="../img/icon.jpg"/>
+    <!-- Theme style -->
+     <link rel="stylesheet" href="../css/main.css"/>
+    
+    
+  </head>
+  <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+  <body class="hold-transition skin-blue layout-top-nav">
+    <div class="wrapper">
+
+      <header class="main-header">
+        <nav class="navbar navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a href="index.html" class="navbar-brand"><b>PostIT</b>Andela App</a>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <i class="fa fa-bars"></i>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a></li>
+             </ul>
+              
+            </div><!-- /.navbar-collapse -->
+            <!-- Navbar Right Menu -->
+              <div class="navbar-custom-menu">
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
+                  </div>
+              </form>
+              </div><!-- /.navbar-custom-menu -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </header>
+      <!-- Full Width Column -->
+      <div class="content-wrapper">
+        <div class="container">
+          <!-- Content Header (Page header) -->
+          <section class="content-header">
+            <h1>
+                            
+            </h1>
+            
+          </section>
+
+          <!-- Main content -->
+          <section class="content">
+            <div class="callout callout-info">
+              <h4>Tip!</h4>
+              <p>Welcome to the community of Software Developer and Web Programmer </p>
+            </div>
+            
+            <div class="box box-default">
+              <div class="box-header with-border">
+                <h3 class="box-title">Chat Groups</h3>
+              </div>
+              <div class="box-body">
+                <div class="row">
+                  <div class="col-md-3">
+                      <div class="box box-solid">
+                        <div class="box-header with-border">
+                          <i class="fa fa-text-width"></i>
+                          <h3 class="box-title">Group List</h3>
+                        </div><!-- /.box-header -->
+                        <div class="box-body">
+                          <ul>
+                            <li>Front-End Developer</li>
+                            <li>Javascript Group</li>
+                            <li>Php Laravel Group</li>
+                            <li>Content Writer</li>
+                            <li>Andela Fellows</li>
+                            
+                          </ul>
+                        </div><!-- /.box-body -->
+                      </div><!-- /.box -->
+
+                  </div>
+                  <div class="col-md-9">
+                     <!-- Chat box -->
+                      <div class="box box-success">
+                        <div class="box-header">
+                          <i class="fa fa-comments-o"></i>
+                          <h3 class="box-title">Chat</h3>
+                          <div class="box-tools pull-right" data-toggle="tooltip" title="Status">
+                            <div class="btn-group" data-toggle="btn-toggle" >
+                              <button type="button" class="btn btn-default btn-sm active"><i class="fa fa-square text-green"></i></button>
+                              <button type="button" class="btn btn-default btn-sm"><i class="fa fa-square text-red"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-body chat" id="chat-box">
+                          <!-- chat item -->
+                          <div class="item">
+                            <img src="../img/default.jpg" alt="user image" class="online">
+                            <p class="message">
+                              <a href="#" class="name">
+                                <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
+                                Mike Doe
+                              </a>
+                              I would like to meet you to discuss the latest news about
+                              the arrival of the new theme. They say it is going to be one the
+                              best themes on the market
+                            </p>
+                            <div class="attachment">
+                              <h4>Attachments:</h4>
+                              <p class="filename">
+                                Theme-thumbnail-image.jpg
+                              </p>
+                              <div class="pull-right">
+                                <button class="btn btn-primary btn-sm btn-flat">Open</button>
+                              </div>
+                            </div><!-- /.attachment -->
+                          </div><!-- /.item -->
+                          <!-- chat item -->
+                          <div class="item">
+                            <img src="../img/default.jpg" alt="user image" class="offline">
+                            <p class="message">
+                              <a href="#" class="name">
+                                <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:15</small>
+                                Alexander Pierce
+                              </a>
+                              I would like to meet you to discuss the latest news about
+                              the arrival of the new theme. They say it is going to be one the
+                              best themes on the market
+                            </p>
+                          </div><!-- /.item -->
+                          <!-- chat item -->
+                          <div class="item">
+                            <img src="../img/default.jpg" alt="user image" class="offline">
+                            <p class="message">
+                              <a href="#" class="name">
+                                <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:30</small>
+                                Susan Doe
+                              </a>
+                              I would like to meet you to discuss the latest news about
+                              the arrival of the new theme. They say it is going to be one the
+                              best themes on the market
+                            </p>
+                          </div><!-- /.item -->
+                        </div><!-- /.chat -->
+                        <div class="box-footer">
+                          <div class="input-group">
+                            <input class="form-control" placeholder="Type message...">
+                            <div class="input-group-btn">
+                              <button class="btn btn-success"><i class="fa fa-plus"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- /.box (chat box) -->
+
+                  </div>
+                </div>
+
+              </div><!-- /.box-body -->
+            </div><!-- /.box -->
+          </section><!-- /.content -->
+        </div><!-- /.container -->
+      </div><!-- /.content-wrapper -->
+      <footer class="main-footer">
+        <div class="container">
+          <div class="pull-right hidden-xs">
+            <b>Version 1.0</b> 
+          </div>
+          <strong>Copyright &copy; 2017 <a href="http://andela.com">Andela </a>.</strong> All rights reserved.
+        </div><!-- /.container -->
+      </footer>
+    </div><!-- ./wrapper -->
+
+        <!-- jQuery 2.1.4 -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+       <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+      </body>
+</html>

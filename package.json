@@ -1,0 +1,41 @@
+
+{
+  "name": "AndelaPostITApp",
+  "version": "1.0.0",
+  "description": "PostIt Bootcamp Project, the app is for community of people",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "nodemon ./bin/www",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craftword/Bootcamp-LOS-24--PostIt-Project.git"
+  },
+  "keywords": [
+    "reactjs"
+  ],
+  "author": "Abimbola Olaitan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/craftword/Bootcamp-LOS-24--PostIt-Project/issues"
+  },
+  "homepage": "https://github.com/craftword/Bootcamp-LOS-24--PostIt-Project#readme",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "eslint": "^4.2.0",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-sass": "^3.1.0",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "pg": "^6.4.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.2.1"
+  }
+}
