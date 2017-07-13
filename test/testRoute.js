@@ -40,22 +40,5 @@ describe('Test for token when sign in', ()=> {
 
 });
 
-// Test For Group Creation
-describe('Test for create group', ()=> {
-    it('respond with json', (done)=> {
-        const prob = {name:"AngularJs", description:"build on angular", userId:2};
-        server
-            .post("/api/group")
-            .send(prob)
-            .end((err,res)=> {
-                //const data = JSON.parse(res.text);
-                expect(err).to.be.null;
-                expect(res.body.name).to.be.equal(prob.name);
-	            expect(res.body.description).to.be.equal(prob.description);                    
-	            expect(res.body.createdAt).not.to.be.null;
-                done();
-            });
-    });
 
-});
 
