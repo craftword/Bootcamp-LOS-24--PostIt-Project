@@ -4,6 +4,7 @@ const createGroupController = require("../controllers").group;
 const createMembersController = require("../controllers").member;
 const createMessageController = require("../controllers").message;
 
+
 module.exports = (app) => {
     app.get("/api/", (req, res) => res.status(200).send({
         message: "Welcome to the PostIT API!",
