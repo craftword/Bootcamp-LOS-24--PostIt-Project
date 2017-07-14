@@ -2,7 +2,7 @@
 const http = require('http');
 const app = require('../app'); // The express app we just created
 
-const port = parseInt(process.env.PORT, 10) || 6969;
+const port = process.env.PORT|| 6969;
 app.set('port', port);
 
 const server = http.createServer(app);
