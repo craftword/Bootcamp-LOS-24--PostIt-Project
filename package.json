@@ -4,9 +4,11 @@
   "description": "PostIt Bootcamp Project, the app is for community of people",
   "main": "app.js",
   "scripts": {
-    "start:dev": "",
-    "test": "mocha test/testRoute.js --10000",
-    "start": "nodemon ./bin/www",
+    "mocha": "mocha --compilers js:babel-register",
+    "test": "mocha --compilers js:babel-register --recursive ./test/",
+    "babel-node": "babel-node --presets=latest",
+    "start": "nodemon --exec npm run babel-node -- ./bin/www",
+    "build": "babel src -d dist",
     "coverage": "node node_modules/.bin/istanbul cover _mocha -- -R spec"
   },
   "repository": {
@@ -24,6 +26,11 @@
   "engines": {
     "node": "8.1.3",
     "npm": "4.5.0"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
   },
   "homepage": "https://github.com/craftword/Bootcamp-LOS-24--PostIt-Project#readme",
   "devDependencies": {
@@ -44,6 +51,8 @@
     "nodemon": "^1.11.0",
     "pg": "^6.4.0",
     "pg-hstore": "^2.3.2",
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
     "sequelize": "^4.2.1"
   }
 }

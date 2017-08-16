@@ -1,6 +1,9 @@
-'use strict';
-module.exports = (sequelize, DataTypes) => {
-    const Users = sequelize.define('Users', {
+"use strict";
+import * as bcrypt from "bcrypt";
+const saltRounds = 10;
+
+const Users = (sequelize, DataTypes) => {
+    const Users = sequelize.define("Users", {
         username: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -17,6 +20,7 @@ module.exports = (sequelize, DataTypes) => {
         email: {
             type: DataTypes.STRING,
             allowNull: false,
+            isEmail: true, 
         },
         phone: {
             type: DataTypes.STRING,
@@ -31,12 +35,27 @@ module.exports = (sequelize, DataTypes) => {
         classMethods: {
             associate: (models) => {
                 Users.hasMany(models.Groups, {
-                    foreignKey: 'userId',
-                    as: 'groups',
+                    foreignKey: "userId",
+                    as: "groups",
                 });
             },
-        },
+        }
+    },
+    {
+        hooks: {
+            beforeCreate: (Users, options) => {
+                Users.password = bcrypt.hashSync(Users.password, saltRounds);
+            },
+            afterCreate: (user, options) => {
+                user.username = 'Toni';
+            }
+        }
     
     });
+    // hooks for encryting the password
+
     return Users;
 };
+
+export default Users;
+

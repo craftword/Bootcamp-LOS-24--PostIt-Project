@@ -1,5 +1,5 @@
 "use strict";
-module.exports = (sequelize, DataTypes)=>  {
+module.exports = (sequelize, DataTypes) =>  {
     const Messages = sequelize.define("Messages", {
         groupId: DataTypes.INTEGER,
         message: DataTypes.TEXT

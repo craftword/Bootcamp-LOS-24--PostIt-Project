@@ -27,15 +27,16 @@ module.exports = {
                         const token = jwt.sign({exp: Math.floor(Date.now() / 1000) + (60 * 60), data:user.username}, secret);
                         //console.log(token);
                         // return the information including token as JSON
-                        res.json({
+                        res.status(200).json({
                             success: true,
-                            message: "Enjoy your token!",
+                            userId:user.id,
+                            message: "Welcome Home!",
                             token: token
                         });
 
                     }else{
                     //go away
-                        res.json({ success: false, message: "Authentication failed. Wrong password." });
+                        res.status(403).json({ success: false, message: "Authentication failed. Wrong password." });
                     }
                 });
             });

@@ -8,7 +8,7 @@ const server = request.agent("http://localhost:6969");
 // Test for Api message post
 describe('Test for Posting messages for group 3', ()=> {
     it('respond with json', (done)=> {
-        const prob = {message:"Group meeting will be in the next two weeks"};
+        const prob = { message:"Group meeting will be in the next two weeks"};
         server
             .post('/api/group/3/message')
             .send(prob)
