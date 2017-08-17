@@ -1,11 +1,10 @@
-//const createUserController = require("../controllers").user;
-const signInController = require("../controllers").userSignIn;
-const createGroupController = require("../controllers").group;
-const createMembersController = require("../controllers").member;
-const createMessageController = require("../controllers").message;
 
 import create from "../controllers/createUser";
-//const createUserController = controllers.user;
+import signIn from "../controllers/signIn";
+import jwtAuth from "../controllers/jwtAuth";
+import createGroups from "../controllers/createGroup"; 
+import addMembers from "../controllers/members";
+import getMessages from "../controllers/messages";
 
 const appApi = (app) => {
     app.get("/api/", (req, res) => res.status(200).send({
@@ -13,11 +12,11 @@ const appApi = (app) => {
     }));
 
     app.post("/api/user/signup", create);
-    app.post("/api/user/signin", signInController.signIn);
-    app.post("/api/group", createGroupController.create);
-    app.post("/api/group/:groupId/user", createMembersController.create);
-    app.post("/api/group/:groupId/message", createMessageController.create);
-    app.get("/api/group/:groupId/message", createMessageController.list);
+    app.post("/api/user/signin", signIn);
+    app.post("/api/group", jwtAuth,createGroups);
+    app.post("/api/group/:groupId/user", jwtAuth, addMembers);
+    app.post("/api/group/:groupId/message", jwtAuth, getMessages.create);
+    app.get("/api/group/:groupId/message", jwtAuth, getMessages.list);
 
 };
 

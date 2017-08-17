@@ -1,9 +1,10 @@
 "use strict";
-module.exports = (sequelize, DataTypes)=> {
+const Members = (sequelize, DataTypes)=> {
     const Members = sequelize.define("Members", {
         groupId: DataTypes.INTEGER,
         member: DataTypes.STRING
-    }, {
+    }, 
+    {
         classMethods: {
             associate: (models) => {
                 // associations can be defined here
@@ -16,3 +17,4 @@ module.exports = (sequelize, DataTypes)=> {
     });
     return Members;
 };
+export default Members;

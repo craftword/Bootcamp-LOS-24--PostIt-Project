@@ -1,5 +1,7 @@
-const getPostMessage = require('../models').Messages;
-module.exports = {
+import models from "../models";
+const getPostMessage = models.Messages;
+
+const getMessages = {
     create(req, res) {
         return getPostMessage
             .create({
@@ -21,3 +23,5 @@ module.exports = {
             .catch(error => res.status(400).send(error));
     },
 };
+
+export default getMessages;

@@ -1,6 +1,4 @@
 "use strict";
-import * as bcrypt from "bcrypt";
-const saltRounds = 10;
 
 const Users = (sequelize, DataTypes) => {
     const Users = sequelize.define("Users", {
@@ -31,7 +29,8 @@ const Users = (sequelize, DataTypes) => {
             allowNull: false,
         }
            
-    }, {
+    }, 
+    {
         classMethods: {
             associate: (models) => {
                 Users.hasMany(models.Groups, {
@@ -40,19 +39,8 @@ const Users = (sequelize, DataTypes) => {
                 });
             },
         }
-    },
-    {
-        hooks: {
-            beforeCreate: (Users, options) => {
-                Users.password = bcrypt.hashSync(Users.password, saltRounds);
-            },
-            afterCreate: (user, options) => {
-                user.username = 'Toni';
-            }
-        }
-    
     });
-    // hooks for encryting the password
+    
 
     return Users;
 };
