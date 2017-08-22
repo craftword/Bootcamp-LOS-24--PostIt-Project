@@ -8,10 +8,10 @@
     "dialect": "postgres"
   },
   "test": {
-    "username": "anqcmjix",
-    "password": "UgWh_gdlcXgJUjCXBn-bIjC_XvNqfj-i",
-    "database": "anqcmjix",
-    "use_env_variable": "postgres://anqcmjix:UgWh_gdlcXgJUjCXBn-bIjC_XvNqfj-i@tantor.db.elephantsql.com:5432/anqcmjix",
+    "username": "xquwihyo",
+    "password": "cmvDbAeqHG980Nizzkmu2u2jbVWUvWc9",
+    "database": "xquwihyo",
+    "use_env_variable": "postgres://xquwihyo:cmvDbAeqHG980Nizzkmu2u2jbVWUvWc9@stampy.db.elephantsql.com:5432/xquwihyo",
     "host":"tantor.db.elephantsql.com",
     "dialect": "postgres"
   },
