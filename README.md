@@ -3,6 +3,7 @@
 
 [![Build Status](https://travis-ci.org/craftword/Bootcamp-LOS-24--PostIt-Project.svg?branch=master)](https://travis-ci.org/craftword/Bootcamp-LOS-24--PostIt-Project)
 
+[![Coverage Status](https://coveralls.io/repos/github/craftword/Bootcamp-LOS-24--PostIt-Project/badge.svg?branch=master)](https://coveralls.io/github/craftword/Bootcamp-LOS-24--PostIt-Project?branch=master)
 ---
 ### PostIT is app that help people to connect, from the words of Robert kiyosaki > The RICHEST PEOPLE in THE WORLD look for and build NETWORKS,everyone else looks for work.So if you want to be rich, build more of the right relationship. That is why technology had made easy for us to build relationship. PostIt is the app for this. 
 
